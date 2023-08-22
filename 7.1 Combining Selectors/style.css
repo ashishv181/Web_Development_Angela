@@ -1,0 +1,26 @@
+
+/* It will select these two elements  */
+h1, h2{
+    color: purple;
+}
+
+/* This will select the direct children of p element in the .box class
+But if the p element is a grand child (enclosed within another element), it will not select */
+.box > p{
+    color: firebrick;
+}
+
+/* This will select all the children as well as the grand children within the .box class 
+The element may be enclosed within another element and it does not matter. It will be selected irrespective*/
+.box li{
+    color: blue;
+}
+
+/* no spaces between two seletors can be used for specific element */
+li.done{
+    color: seagreen;
+}
+
+ul p.done{
+    font-size: 2rem;
+}
